@@ -47,18 +47,24 @@ Read the files in order. Each builds on the one before it.
 
 ## A note on versions before you start
 
-The original course notes were written against the **zeus** release (Yocto 2.7,
-from 2019). Zeus has long since reached end of life. Throughout this module the
-commands and package lists have been updated to the current Long Term Support
-(LTS) release, **Scarthgap (5.0)**, which was released in April 2024 and is
-supported until April 2028. Where a command or a piece of syntax changed between
-the old notes and current Yocto, there is a clearly marked **UPDATED** note
-explaining the difference, so the historical context is not lost.
 
-Wherever you see a release codename (zeus, dunfell, kirkstone, scarthgap, etc.),
-treat it as a Git branch name. To follow along on the current LTS, use
-`scarthgap`. The full, always-current release list lives at
-https://docs.yoctoproject.org/migration-guides/index.html
+These learning resources were developed and tested using the **Scarthgap (5.0)** 
+release of Poky. Scarthgap is a Long Term Support (LTS) release and was released 
+in **April 2024** and will receive support until **April 2028**.
+
+The examples, commands, and package versions throughout this module assume the 
+**Scarthgap (5.0)** release.
+
+If you are using a different Yocto Project release, note that release codenames 
+(for example, *zeus*, *dunfell*, *kirkstone*, *scarthgap*, etc.) correspond directly 
+to Git branch names. When following the instructions in this course, 
+replace `scarthgap` with the branch name of the release you are using.
+
+For example:
+
+```bash
+git checkout scarthgap
+```
 
 ## Learning objectives
 
